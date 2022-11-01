@@ -9,12 +9,12 @@
 
 
 .odd-lines{
-    background-color: pink;
+    background-color: #ffc0cb;
     font-family: Verdana, "DejaVu Sans", sans-serif;
 }
 
 #line2{
-    color: blue;
+    color: #0000ff;
     font-size: 36px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 #line4{
-    background-color: lightgreen;
+    background-color: #90ee90;
     font-size: 24px;
     font-weight: bold;
 }
