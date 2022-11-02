@@ -1,11 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+/* tasks
+- The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+- The header and footer have padding.
+- The links in the header and footer are pushed to either side.
+- There is space between the links in the header and footer.
+- The footer has a light gray background (`#eeeeee`).
+- The logo, input and buttons are centered in the screen.
+- The buttons have an appropriate amount of padding.
+- There is space between the logo, input and buttons.  */
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.header,
+.footer{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: blue; */
+  padding: 10px;
+}
+
+.footer{
+  background-color: lightgray;
+}
+
+
+.left-links,
+.right-links{
+  display:flex;
+  gap:20px;
+  /* justify-content: space-between; */
+  /* background-color: yellow;   */
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
 
 img {
   width: 600px;
@@ -16,6 +60,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 5px 10px;
 }
 
 input {
@@ -25,3 +70,30 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+a{
+  text-decoration: none;
+  color:grey;
+  text-align: left;
+  
+}
+
+ul{
+  list-style-type: none;
+}
+/* 
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white; */
+
+  
