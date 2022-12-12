@@ -8,6 +8,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display:inline-grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-rows: 0.125fr 0.125fr 0.625fr 0.125fr;
+  gap: 15px;
 }
 
 .container div {
